@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zyad Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Zyad Portfolio.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Zyad <span>Portfolio</span>
+        </a>
+        
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <button class="gradient-btn" onclick="location.href='#contact'">Contact Me</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+            <i class="bx bx-moon"></i>
+        </button>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1>Zyad <span>Magdy</span></h1>
+            <h3>And I'm a <span>Full Stack Developer</span></h3>
+            <p>I create stunning websites and applications that deliver exceptional user experiences. With expertise in both front-end and back-end development, I bring ideas to life with clean, efficient code.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61578946492932" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/zyad-programmer-5b1774366/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/ZyadProgrammer" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            
+            <button class="gradient-btn" onclick="location.href='#projects'">My Projects</button>
+        </div>
+        
+        <div class="hero-img">
+            <img src="Zyad.jpg" alt="Zyad Magdy">
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        
+        <div class="about-content">
+            <div class="about-img">
+                <img src="Zyad.jpg" alt="Zyad Magdy">
+            </div>
+            
+            <div class="about-text">
+                <h3>Full Stack Developer</h3>
+                <p>I'm a passionate developer with 5+ years of experience creating web applications. My journey in tech started when I was 16, and I've been hooked ever since. I specialize in building responsive, user-friendly websites and applications that solve real-world problems.</p>
+                
+                <div class="info">
+                    <div>
+                        <h4>Name:</h4>
+                        <span>Zyad Magdy</span>
+                    </div>
+                    <div>
+                        <h4>Email:</h4>
+                        <span>zyadpro100@gmail.com</span>
+                    </div>
+                    <div>
+                        <h4>Location:</h4>
+                        <span>Hurgada, Egypt</span>
+                    </div>
+                    <div>
+                        <h4>Freelance:</h4>
+                        <span>Available</span>
+                    </div>
+                </div>
+                
+                <p>When I'm not coding, you can find me hiking in the mountains, reading sci-fi novels, or experimenting with new recipes in the kitchen. I believe in continuous learning and staying updated with the latest industry trends.</p>
+                
+                <a href="CV.html" target="_blank" class="gradient-btn">Go To CV ATS</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="service-card">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>I build responsive websites and web applications using modern technologies like React, Vue, Node.js, and more. From simple landing pages to complex web apps.</p>
+            </div>
+            
+            <div class="service-card">
+                <i class="bx bx-mobile-alt"></i>
+                <h3>Mobile Development</h3>
+                <p>Creating cross-platform mobile applications with React Native and Flutter. I focus on performance and native-like user experiences.</p>
+            </div>
+            
+            <div class="service-card">
+                <i class="bx bx-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive and beautiful user interfaces that enhance user engagement and satisfaction. I use Figma and Adobe XD for prototyping.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="shoes">Shoes</button>
+            <button class="filter-btn" data-filter="dragon">Dragon</button>
+            <button class="filter-btn" data-filter="playstation">PlayStation</button>
+            <button class="filter-btn" data-filter="login">Login Form</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+        
+        <div class="projects-container">
+            <div class="project-card" data-category="shoes">
+                <div class="project-img">
+                    <img src="Adidas.png" alt="Adidas website">
+                </div>
+                <div class="project-content">
+                    <h3>Adidas website</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Website%20Shoes/Adidas%20website/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/144Z80hDl2FXkQhdN0ndTYbbbnri2JfUk?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="5amsat Clone.png" alt="5amsat Clone">
+                </div>
+                <div class="project-content">
+                    <h3>5amsat Clone</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/HTML%20&%20CSS/5amsat%20Clone/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1feOo8qYgZgO8d_l9Tu395uU8V1gkYpjp?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Cal.png" alt="Calculator">
+                </div>
+                <div class="project-content">
+                    <h3>Calculator</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Calculater/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/17ty_SmQ_hScLv-Um0mor-P1o-GDX_HpC?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Ca;ender.png" alt="Calendar">
+                </div>
+                <div class="project-content">
+                    <h3>Calendar</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Calander/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1F0Iw8UTyuY-rcdAfXW11jCurck9G8T6R?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="dragon">
+                <div class="project-img">
+                    <img src="Dragon.png" alt="Dragon Project">
+                </div>
+                <div class="project-content">
+                    <h3>Dragon</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Codehal/Image%20Slider%20HTML%20CSS%20&%20Javascript/Project%201/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1_1Xg3AJYtt67WIpB4gApgtXf4bLeQB9v?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="playstation">
+                <div class="project-img">
+                    <img src="PlayStation controller.png" alt="PlayStation controller">
+                </div>
+                <div class="project-content">
+                    <h3>PlayStation controller</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Codehal/Image%20Slider%20HTML%20CSS%20&%20Javascript/Project%203/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1AHoIxcXDEiiDniaM_jjDtRWgD9awzE1n?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Tours..png" alt="Tours Project">
+                </div>
+                <div class="project-content">
+                    <h3>Tours.</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Codehal/Image%20Slider%20HTML%20CSS%20&%20Javascript/Project%202/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1i0kU4seYyIn2hQzU2PN428oyCosG3yVo?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="dragon">
+                <div class="project-img">
+                    <img src="Dragon 2.png" alt="Dragon 2 Project">
+                </div>
+                <div class="project-content">
+                    <h3>Dragon 2</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Codehal/Image%20Slider%20HTML%20CSS%20&%20Javascript/Project%204/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/14Wr2dUjgkbjLU_MSvp0FSWqYev_-k3td?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="login">
+                <div class="project-img">
+                    <img src="Login Form.png" alt="Login Form">
+                </div>
+                <div class="project-content">
+                    <h3>Login Form</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Codehal/Website%20With%20Login%20And%20Registration%20Form/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1Y0yWoitgtx3vvft4f2qlUrybk9aFgOUI?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="shoes">
+                <div class="project-img">
+                    <img src="Nike.png" alt="Nike Project">
+                </div>
+                <div class="project-content">
+                    <h3>Nike</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Website%20Shoes/Shoes%205/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1i0kU4seYyIn2hQzU2PN428oyCosG3yVo?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="shoes">
+                <div class="project-img">
+                    <img src="Shoes 2.png" alt="Nike 2 Project">
+                </div>
+                <div class="project-content">
+                    <h3>Nike 2</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Website%20Shoes/Shoes%204/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1BZkjqct-TbMaraTSDHNluL3sI4pI2my7?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Zyad Pro.png" alt="Zyad Pro Project">
+                </div>
+                <div class="project-content">
+                    <h3>Zyad Pro</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/HTML%20&%20CSS/HTML%20&%20CSS/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1HyjB4oKvxhBguM0ughAj3B3uONbsGQUZ?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="shoes">
+                <div class="project-img">
+                    <img src="Nike 3.png" alt="Nike 3 Project">
+                </div>
+                <div class="project-content">
+                    <h3>Nike 3</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/Website%20Shoes/Shoes%203/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1TQpPAasSayvRaC2-6374bYrhmxWkb_eF?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="YouTube.png" alt="YouTube">
+                </div>
+                <div class="project-content">
+                    <h3>YouTube</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/HTML%20&%20CSS/YouTube/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1F0Iw8UTyuY-rcdAfXW11jCurck9G8T6R?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Login.png" alt="Login">
+                </div>
+                <div class="project-content">
+                    <h3>Login Form</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/El_Shadow/Lesson%205/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1d5JpPAkGrl2kdd6xIMV8tF5lw0pcD6pa?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Log.png" alt="Calendar">
+                </div>
+                <div class="project-content">
+                    <h3>Login Form</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/El_Shadow/Lesson%206/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/1g44eBfdeSwyZEqQrT7r9ObGyOXymj-9G?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-img">
+                    <img src="Lo.png" alt="Calendar">
+                </div>
+                <div class="project-content">
+                    <h3>Login Form</h3>
+                    <div class="project-links">
+                        <a href="file:///V:/El_Shadow/Lesson%2016/index.html" target="_blank">Live Demo</a>
+                        <a href="https://drive.google.com/drive/folders/15W1t6yILGF7QTZwrCw2RSMH6bvncp21z?usp=sharing" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="bx bx-envelope"></i>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>zyadpro100@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="bx bx-phone"></i>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+20 107 079 5098</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="bx bx-map"></i>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Hurgada, Egypt</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="gradient-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <p class="footer-text">© 2023 Zyad Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
